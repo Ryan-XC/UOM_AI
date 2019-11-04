@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}{{ args.title }}{% endblock %}
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='table.css') }}">
+    <script src="{{ url_for('static', filename='json.js') }}"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <h1>{{ args.title }}</h1>
+    {% for table in args.tables %}
+        <h2>{{ table.title }}</h2>
+        <div id="page-wrap">
+            <table >
+                <thead>
+                <tr>
+                    {% for column in table.header %}
+                        <th>{{ column }}</th>
+                    {% endfor %}
+                </tr>
+                </thead>
+                <tbody>
+                {% for row in table.rows %}
+                    <tr>
+                        {% for data_item in row %}
+                            <td>{{ data_item }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <br/>
+        </div>
+    {% endfor %}
+    <div id="viz" style="width: 70%; margin-right: auto; margin-left: auto;"></div>
+    <script type=text/javascript>
+        $(function () {
+            var table = document.getElementsByTagName('table');
+            var table$ = $(table);
+            var obj = table$.tableToJSON();
+            var width = 960, height = 500;
+            console.log(JSON.stringify(obj, null, 4));
+            $('#viz').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'Average Authors per Publication'
+                },
+                xAxis: {
+                    categories: ["Conference Paper", "Journal", "Book",
+                        "Book Chapter", "All Publications"],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Mean',
+                    data: [3, 10, 0, 0, 5.8]
+                }, {
+                    name: 'Median',
+                    data: [3, 10, 0, 0, 3]
+                }, {
+                    name: 'Mode',
+                    data: [2, 18, 0, 0, 2]
+                }]
+            });
+        });
+    </script>
+{% endblock %}

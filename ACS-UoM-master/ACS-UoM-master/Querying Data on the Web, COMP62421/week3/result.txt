@@ -1,0 +1,52 @@
+D
+CPU Time: user 0.000348 sys 0.000993
+CPU Time: user 0.000146 sys 0.000218
+CPU Time: user 0.000213 sys 0.000319
+CPU Time: user 0.000661 sys 0.000000
+CPU Time: user 0.000899 sys 0.000000
+CPU Time: user 0.000473 sys 0.000000
+CPU Time: user 0.000095 sys 0.000131
+CPU Time: user 0.000193 sys 0.000154
+
+D10
+CPU Time: user 0.000346 sys 0.001073
+CPU Time: user 0.003076 sys 0.001011
+CPU Time: user 0.000305 sys 0.000974
+CPU Time: user 0.000596 sys 0.000000
+CPU Time: user 0.000342 sys 0.000029
+CPU Time: user 0.003491 sys 0.000522
+CPU Time: user 0.003474 sys 0.000000
+CPU Time: user 0.000788 sys 0.000158
+
+D100
+CPU Time: user 0.001161 sys 0.000474
+CPU Time: user 0.019650 sys 0.003468
+CPU Time: user 0.000458 sys 0.000987
+CPU Time: user 0.000508 sys 0.000162
+CPU Time: user 0.000420 sys 0.000134
+CPU Time: user 0.019142 sys 0.006050
+CPU Time: user 0.017141 sys 0.001204
+CPU Time: user 0.000364 sys 0.002030
+
+D1000
+CPU Time: user 0.000976 sys 0.003005
+CPU Time: user 0.079255 sys 0.011534
+CPU Time: user 0.001124 sys 0.002108
+CPU Time: user 0.001474 sys 0.000090
+CPU Time: user 0.000850 sys 0.000000
+CPU Time: user 0.184604 sys 0.024342
+CPU Time: user 0.174826 sys 0.037293
+CPU Time: user 0.004221 sys 0.018936
+
+D10000
+CPU Time: user 0.000984 sys 0.023463
+CPU Time: user 0.317834 sys 0.050898
+CPU Time: user 0.002394 sys 0.006102
+CPU Time: user 0.008620 sys 0.000778
+CPU Time: user 0.002118 sys 0.000009
+CPU Time: user 1.753290 sys 0.265198
+CPU Time: user 1.716333 sys 0.312014
+CPU Time: user 0.034257 sys 0.158972
+
+
+

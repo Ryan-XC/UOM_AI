@@ -1,0 +1,13 @@
+load-list
+{
+    variables:
+        "BB" = "C:/Users/Simone/Desktop/evolve-1.0.2/atm/BB";
+    directories:
+        "ATM" = "$BB/atm/atm",
+        "backbone" = "C:/Users/Simone/Desktop/evolve-1.0.2/atm/backbone",
+        "backbone :: implementation" = "C:/Users/Simone/Desktop/evolve-1.0.2/atm/backbone/implementation",
+        "backbone :: standard profile" = "C:/Users/Simone/Desktop/evolve-1.0.2/atm/backbone/standard profile",
+        "backbone :: documentation profile" = "C:/Users/Simone/Desktop/evolve-1.0.2/atm/backbone/documentation profile",
+        "backbone :: api" = "C:/Users/Simone/Desktop/evolve-1.0.2/atm/backbone/api",
+        "backbone :: backbone profile" = "C:/Users/Simone/Desktop/evolve-1.0.2/atm/backbone/backbone profile";
+}

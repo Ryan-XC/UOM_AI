@@ -1,0 +1,63 @@
+Task1
+CPU Time: user 0.002529 sys 0.000000
+CPU Time: user 0.001624 sys 0.000083
+CPU Time: user 0.000388 sys 0.000134
+CPU Time: user 0.002671 sys 0.000070
+CPU Time: user 0.000503 sys 0.000161
+CPU Time: user 0.005818 sys 0.000000
+CPU Time: user 0.000404 sys 0.000000
+CPU Time: user 0.001908 sys 0.000000
+CPU Time: user 0.001909 sys 0.000005
+CPU Time: user 0.001613 sys 0.000087
+
+
+Task 2
+Query "1.xquery" executed in 152.3 ms.
+Query "2.xquery" executed in 12.1 ms.
+Query "3.xquery" executed in 9.92 ms.
+Query "4.xquery" executed in 167.14 ms.
+Query "5.xquery" executed in 6.21 ms.
+Query "6.xquery" executed in 205.15 ms.
+Query "7.xquery" executed in 2.35 ms.
+Query "8.xquery" executed in 11.35 ms.
+Query "9.xquery" executed in 64.01 ms.
+Query "10.xquery" executed in 160.97 ms.
+
+
+Task 3
+Query "1.xquery" executed in 15.93 ms.
+Query "2.xquery" executed in 35.91 ms.
+Query "3.xquery" executed in 16.03 ms.
+Query "4.xquery" executed in 15.89 ms.
+Query "5.xquery" executed in 13.99 ms.
+Query "6.xquery" executed in 65.89 ms.
+Query "7.xquery" executed in 19.12 ms.
+Query "8.xquery" executed in 24.15 ms.
+Query "9.xquery" executed in 124.19 ms.
+Query "10.xquery" executed in 11.8 ms.
+
+Task 4
+Query "1.xquery" executed in 19.91 ms.
+Query "2.xquery" executed in 20.19 ms.
+Query "3.xquery" executed in 12.16 ms.
+Query "4.xquery" executed in 16.13 ms.
+Query "5.xquery" executed in 16.91 ms.
+Query "6.xquery" executed in 69.91 ms.
+Query "7.xquery" executed in 31.17 ms.
+Query "8.xquery" executed in 32.05 ms.
+Query "9.xquery" executed in 156.96 ms.
+Query "10.xquery" executed in 10.94 ms.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

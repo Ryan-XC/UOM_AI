@@ -1,0 +1,22 @@
+{
+  "person": [
+    {
+      "ID": "1",
+      "name": {
+        "first": "Aleshia",
+        "last": "Tomkiewicz",
+        "others": ""
+      },
+      "address": "14 Taylor St",
+      "city": "St. Stephens Ward",
+      "county": "Kent",
+      "postal": "CT2 7PP",
+      "phone": {
+        "phone1": "01835-703597",
+        "phone2": "01944-369967",
+        "phone3": ""
+      },
+      "email": "atomkiewicz@hotmail.com"
+    }
+  ]
+}

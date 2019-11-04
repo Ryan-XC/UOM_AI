@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<conference>
+	<article>
+		<title value = "Pushing the EL Envelope"/>
+		<abstract value = "yes"/>
+		<status value = "submitted"/>
+		<authorList>
+			<author>
+				<name value = "Franz Baader"/>
+				<institution>
+		 			<country value = "Germany"/>
+		 			<iname value = "Theoretical Computer Science" />
+		 			<address value = "TU Dresden"/>
+				</institution>
+			</author>
+
+			<author>
+				<name value = "Sebastian Brandt"/>
+				<institution>
+		 			<country value = "Germany"/>
+		 			<iname value = "Theoretical Computer Science" />
+		 			<address value = "TU Dresden"/>
+				</institution>
+			</author>
+
+			<author>
+				<name value = "Carsten Lutz"/>
+				<institution>
+		 			<country value = "Germany"/>
+		 			<iname value = "Theoretical Computer Science" />
+		 			<address value = "TU Dresden"/>
+				</institution>
+			</author>
+		</authorList>
+	</article>
+
+	<article>
+		<title value = "Web Semantics: Science, Services and Agents on the World Wide Web" />
+		<abstract value = "yes"/>
+		<status value = "accepted"/>
+		<authorList>
+			<author>
+				<name value = "Ian Horrocks"/>
+				<institution>
+					<country value = "UK" />
+					<iname value = "Department of Computer Science, University of Manchester"/>
+					<address value = "Oxford Road, Manchester M13 9PL"/>
+				</institution>
+			</author>
+
+			<author>
+				<name value = "Peter F. Patel-Schneider"/>
+				<institution>
+					<country value = "USA"/>
+					<iname value = "Bell Labs Research, Lucent Technologies"/>
+					<address value = "600 Mountain Avenue, Murray Hill, NJ 07974"/>
+				</institution>
+			</author>
+
+			<author>
+				<name value = "Frank van Harmelen"/>
+				<institution>
+					<country value = "The Netherlands"/>
+					<iname value = "AI Department, Vrije Universiteit Amsterdam"/>
+					<address value = "de Boelelaan 1081a, 1081HV Amsterdam"/>
+				</institution>
+			</author>
+		</authorList>
+	</article>
+
+	<article>
+		<title value = "Semistructured data"/>
+		<abstract value = ""/>
+		<status value = "published"/>
+		<authorList>
+			<author>
+				<name value = "Peter Buneman"/>
+				<institution>
+					<country value = "USA"/>
+					<iname value = "Department of Computer and Information Science, University of Pennsylvania"/>
+					<address value = "Philadelphia, PA"/>
+				</institution>
+			</author>	
+		</authorList>
+	</article>
+</conference>

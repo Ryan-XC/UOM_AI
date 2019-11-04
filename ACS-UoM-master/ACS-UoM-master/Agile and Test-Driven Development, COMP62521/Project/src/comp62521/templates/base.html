@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='jquery-ui.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='d3.min.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head> 
+<body>
+<div id="page">
+    <div id="header">
+        <h1><img src="../static/icon.png" style="width:45px; height:40px;margin-right: 5px;">COMP62521: {{ args.dataset }}</h1>
+        <div id="navigation">
+            <ul><li><a href="/">Home</a></li></ul>
+        </div>
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</div>
+</body>
+</html>

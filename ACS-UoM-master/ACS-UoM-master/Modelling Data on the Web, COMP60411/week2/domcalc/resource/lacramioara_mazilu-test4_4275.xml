@@ -1,0 +1,36 @@
+
+<expression>
+    <times>
+        <int value="25"/>
+        <plus>
+            <int value="-50"/>
+            <minus>
+                <int value="4"/>
+                <plus>
+                    <int value="10"/>
+                    <int value="3"/>
+                    <int value="-4"/>
+                </plus>
+            </minus>
+            <times>
+                <int value="2"/>
+                <plus>
+                    <minus>
+	                    <int value="10"/>
+	                    <int value="3"/>
+                    </minus>
+                    <int value="-4"/>
+                    <times>
+                        <plus>
+                            <int value="1"/>
+	                    	<int value="4"/>
+                        </plus>
+                        <int value="10"/>
+	                    <int value="3"/>
+                    </times>
+                    <int value="-40"/>
+                </plus>
+            </times>
+        </plus>
+    </times>
+</expression>

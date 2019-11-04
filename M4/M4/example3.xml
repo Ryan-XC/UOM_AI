@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents>
+    <incident Id="789">
+        <event_detail Kind="Damage to property" Date_of_event="Friday,March 21,2019" Time="10:45" Building_location="kilburn" Room_No="2.17" School_admin_department="Computer Science">
+            A person tripped and fell
+        </event_detail>
+        <injured_person Status="staff" Name="Rueben" Staff_student_ID_No="12487679" Job_Title="teacher" Supervisor_manager="Edgar" Tel_No="07898765649" Email="Rueben@outlook.com" School_Administrative_unit="Computer Science" Treatment="No treatment" Absence_from_work="No Absent">
+            <description_of_event>
+                Rueben broke a monitor.
+            </description_of_event>
+            <nature_extent_of_any_injury_damage>
+                a broken monitor.
+            </nature_extent_of_any_injury_damage>
+            <nature_of_treatmen_given_and_by_whom>
+                No treatment.
+            </nature_of_treatmen_given_and_by_whom>
+        </injured_person>
+        <report_person Name="Martha" Job_title="staff" Email="Martha@outlook.com" Tel_No="07897261618" School_Administrative_unit="Computer Science">
+            Rueben's colleague Martha witnessed the accident.
+        </report_person>
+    </incident>
+</incidents>

@@ -1,0 +1,31 @@
+#input datatypes
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+grammar
+
+{start = expression-description 
+
+expression-description = element expression {expr-description, comment-description*}
+
+expr-description  = plus-description | times-description | minus-description 
+| division-description | (int-description, dec-description*)
+# Comment text interval with b and i. Works with expression.
+comment-description = element comment { text & ((element i {text}*) | (element b {text}*))* }
+
+# Plus and times are n-ary, where n is greater
+# than 2.Now plus support a *Unary* operation
+plus-description = element plus { expr-description, expr-description* }
+
+times-description = element times { expr-description, expr-description+ }
+
+# Now minus support a *Unary* operation
+minus-description = element minus { expr-description, expr-description*}
+# Add division operation
+division-description = element division { expr-description, expr-description }
+
+# Valid int value from -1000 to 1000.
+int-description = element int { attribute value { xsd:integer { minInclusive = "-1000" maxInclusive = "1000"}}, empty }
+# Decimal with elment name dec. From -1000 to 1000
+dec-description = element dec { attribute value { xsd:decimal { minInclusive = "-1000" maxInclusive = "1000"}}, empty }
+
+}

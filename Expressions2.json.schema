@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema for expressions, with 2+-ary plus, 2-ary times, 2-ary minus, 2-ary division and integer values",
+  "definitions": {
+    "description":{"value":"18","humanReadableExpression":"4+5+4+5"},
+    "expression": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/plus-expr"
+        },
+        {
+          "$ref": "#/definitions/times-expr"
+        },
+        {
+          "$ref": "#/definitions/minus-expr"
+        },
+        {
+          "$ref": "#/definitions/division-expr"
+        },
+        {
+          "$ref": "#/definitions/atom-expr"
+        },
+      
+      ]
+    },
+    "plus-expr": {
+      "$comment":"with 2 or more ary",
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "plus": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/expression"
+          },
+          "minItems": 2
+        }
+      },
+      "required": [
+        "plus"
+      ]
+    },
+    "minus-expr": {
+      "$comment":"with 2 ary",
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "minus": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/expression"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "required": [
+        "minus"
+      ]
+    },
+    "times-expr": {
+      "$comment":"with 2 ary",
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "times": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/expression"
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "additionalItems": false
+        }
+      },
+      "required": [
+        "times"
+      ]
+    },
+    "division-expr": {
+      "$comment":"with 2 ary",
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "division": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/expression"
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "additionalItems": false
+        }
+      },
+      "required": [
+        "division"
+      ]
+    },
+    "atom-expr": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "int": {
+          "$comment":"do not permit inputing numbers outside the range -1000 to 1000",
+          "type": "integer",
+          "minimum": -1000,
+          "maximum": 1000
+        },
+        "dec": {
+          "$comment":"support decimal numbers",
+          "type": "integer",
+          "minimum": -1000,
+          "maximum": 1000
+        }
+      },
+    }
+  },
+  "type": "object",
+  "properties": {
+    "root": {
+      "$ref": "#/definitions/expression"
+    }
+  },
+  "required": [
+    "root"
+  ]
+}

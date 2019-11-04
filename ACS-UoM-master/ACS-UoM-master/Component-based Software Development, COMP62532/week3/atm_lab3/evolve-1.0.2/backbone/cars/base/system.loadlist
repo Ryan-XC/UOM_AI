@@ -1,0 +1,13 @@
+load-list
+{
+    variables:
+        "BB" = "C:/Users/Simone/Desktop/evolve-1.0.2/backbone";
+    directories:
+        "base" = "$BB/cars/base",
+        "backbone" = "C:/Users/Simone/Desktop/evolve-1.0.2/tutorial/CarRental/backbone",
+        "backbone :: implementation" = "C:/Users/Simone/Desktop/evolve-1.0.2/tutorial/CarRental/backbone/implementation",
+        "backbone :: documentation profile" = "C:/Users/Simone/Desktop/evolve-1.0.2/tutorial/CarRental/backbone/documentation profile",
+        "backbone :: standard profile" = "C:/Users/Simone/Desktop/evolve-1.0.2/tutorial/CarRental/backbone/standard profile",
+        "backbone :: api" = "C:/Users/Simone/Desktop/evolve-1.0.2/tutorial/CarRental/backbone/api",
+        "backbone :: backbone profile" = "C:/Users/Simone/Desktop/evolve-1.0.2/tutorial/CarRental/backbone/backbone profile";
+}

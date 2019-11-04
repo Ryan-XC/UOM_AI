@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <div id ="nav" style="width:520px; height:500px; float:left">
+        <ul style="width:150px; float:left;">
+            <li>Summary</li>
+            <ol>
+                <li><a href="/statisticsdetails/publication_summary">Publication Summary</a></li>
+                <li><a href="/statisticsdetails/publication_author">Publication by Author</a></li>
+                <li><a href="/statisticsdetails/publication_year">Publication by Year</a></li>
+                <li><a href="/averages">Averaged Year Data</a></li>
+            </ol>
+        </ul>
+        <ul style="width:150px; float:left;">
+            <li>Authors</li>
+            <ol>
+                <li><a href="/statisticsdetails/author_year">Author by Year</a></li>
+                <li><a href="/coauthors">Co-Authors</a></li>
+                <li><a href="/statisticsdetails/author_number">Author Appears in Paper</a></li>
+                <li><a href="/statisticsdetails/author_number_journal">Author Appears in journal article</a></li>
+                <li><a href="/statisticsdetails/author_number_conference">Author Appears in conference paper</a></li>
+                <li><a href="/statisticsdetails/author_number_book">Author Appears in book</a></li>
+                <li><a href="/statisticsdetails/author_number_chapter">Author Appears in book chapter</a></li>
+            </ol>
+        </ul>
+        <ul style="width:150px; float:left; ">
+            <ol><li class = "search"><a href="/searchauthor">Search Author</a></li></ol>
+        </ul>
+        <ul style="width:150px; float:left; ">
+            <li>Advance</li>
+            <ol>
+                <li><a href="/degrees">Degree of separation</a></li>
+                <li><a href="/graph">Graph of the degree of separation</a></li>
+            </ol>
+        </ul>
+    </div>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"
+         style="float:right; width:500px; height:500px; margin-right: 100px; margin-top: 50px;">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="./static/images/1.jpg" alt="1">
+                <div class="carousel-caption">
+                    <h3>Visualisation</h3>
+                    <p>Impressive</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./static/images/2.jpg" alt="2">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <img src="./static/images/3.png" alt="3">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+    </div>
+{% endblock %}

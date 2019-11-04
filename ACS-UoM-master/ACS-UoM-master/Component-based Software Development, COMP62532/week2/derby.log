@@ -1,0 +1,31 @@
+Fri Feb 12 13:31:20 GMT 2016 : Apache Derby Network Server - 10.11.1.2 - (1629631) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Fri Feb 12 13:31:20 GMT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0152-d5ad-c245-00007fb12df4 
+on database directory /home/mbaxrdy2/Downloads/atm with class loader sun.misc.Launcher$AppClassLoader@60e53b93 
+Loaded from file:/opt/JDK/jdk1.8.0_45/db/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=/opt/JDK/jdk1.8.0_45/db
+os.name=Linux
+os.arch=amd64
+os.version=3.10.0-229.7.2.el7.x86_64
+derby.system.home=/home/mbaxrdy2/Downloads/
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Feb 12 13:31:22 GMT 2016:
+Shutting down instance a816c00e-0152-d5ad-c245-00007fb12df4 on database directory /home/mbaxrdy2/Downloads/atm with class loader sun.misc.Launcher$AppClassLoader@60e53b93 
+Fri Feb 12 13:31:22 GMT 2016 Thread[DRDAConnThread_3,5,main] (DATABASE = atm), (DRDAID = {2}), Database 'atm' shutdown.
+----------------------------------------------------------------
+Fri Feb 12 13:31:51 GMT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a65c80ac-0152-d5ad-c245-00007fb12df4 
+on database directory /home/mbaxrdy2/Downloads/atm with class loader sun.misc.Launcher$AppClassLoader@60e53b93 
+Loaded from file:/opt/JDK/jdk1.8.0_45/db/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=/opt/JDK/jdk1.8.0_45/db
+os.name=Linux
+os.arch=amd64
+os.version=3.10.0-229.7.2.el7.x86_64
+derby.system.home=/home/mbaxrdy2/Downloads/
+Database Class Loader started - derby.database.classpath=''

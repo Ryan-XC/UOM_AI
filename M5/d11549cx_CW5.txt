@@ -1,0 +1,43 @@
+//Q1
+SELECT DISTINCT  ?human  WHERE {
+  ?human  wdt:P31 wd:Q5;
+    wdt:P509 wd:Q9687.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+
+//Q2
+SELECT DISTINCT  ?human WHERE {
+  ?human wdt:P31 wd:Q5;
+    wdt:P509 wd:Q9687;
+    wdt:P106 wd:Q10349745
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+
+//Q3
+SELECT DISTINCT ?human WHERE {
+  ?human wdt:P31 wd:Q5.
+  FILTER NOT EXISTS{?human wdt:P106 wd:Q1028181}
+  ?human wdt:P1066 ?teacher.
+  ?teacher wdt:P106 wd:Q1028181.
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+//Q4
+SELECT DISTINCT ?human WHERE {
+  ?human wdt:P31 wd:Q5; 
+         {?human (wdt:P22|wdt:P25)[wdt:P106 wd:Q1028181]} 
+  UNION{?human wdt:P1066+ ?student.
+        ?student wdt:P106 wd:Q1028181}
+  FILTER NOT EXISTS{?human wdt:P106 wd:Q1028181}
+}
+
+
+//Q5
+SELECT DISTINCT ?human WHERE {  
+  ?human wdt:P31 wd:Q5.
+  ?human wdt:P1066+ ?teacher.
+  FILTER(?human = ?teacher)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}

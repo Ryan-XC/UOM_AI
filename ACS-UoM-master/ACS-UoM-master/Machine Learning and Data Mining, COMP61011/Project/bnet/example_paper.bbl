@@ -1,0 +1,32 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bui \& Jun(2012)Bui and Jun]{markov}
+Bui, A.~T. and Jun, C.
+\newblock Learning bayesian network structure using markov blanket
+  decomposition.
+\newblock \emph{Pattern Recognition Letters}, 16\penalty0 (33):\penalty0 2134,
+  2012.
+
+\bibitem[Dalmao(2003)]{value}
+Dalmao, S.~E.
+\newblock \emph{Value elimination: A new algorithm for bayesian inference}.
+\newblock PhD thesis, Department of Computer Science, University of Toronto,
+  2003.
+
+\bibitem[Koller \& Friedman(2009)Koller and Friedman]{prob}
+Koller, D. and Friedman, N. (eds.).
+\newblock \emph{Probabilistic graphical models: Principles and techniques}.
+\newblock MIT Press, Cambridge, 2009.
+
+\bibitem[Tang \& Xu(2014)Tang and Xu]{score}
+Tang, Y. and Xu, Z.
+\newblock A score based approach towards improving bayesian network structure
+  learning.
+\newblock pp.\  39--44, 2014.
+
+\end{thebibliography}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}{{ args.title }}{% endblock %}
+{% block content %}
+    <script src="{{ url_for('static', filename='controller.js') }}"></script>
+    <script src="{{ url_for('static', filename='sort.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='table.css') }}">
+    <h1>{{ args.title }}</h1>
+    <div id="page-wrap">
+        <table id="table1">
+            <thead>
+            <tr>
+                {% for column in args.data[0] %}
+                    <th>{{ column }}</th>
+                {% endfor %}
+            </tr>
+            </thead>
+
+            <tbody>
+
+            {% for row in args.data[1] %}
+                {% set i = true %}
+                <tr>
+                    {% for data_item in row %}
+                        {% if i and args.id != "publication_summary" and args.id != "author_year" and args.id != "publication_year" and args.id != "author" %}
+                            <td><a href="/author?author_name={{ data_item }}">{{ data_item }}</a></td>
+                            {% set i = false %}
+                        {% else %}
+                            <td>{{ data_item }}</td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

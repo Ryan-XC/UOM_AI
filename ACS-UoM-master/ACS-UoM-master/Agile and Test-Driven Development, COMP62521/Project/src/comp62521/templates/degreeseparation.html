@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}{{ args.title }}{% endblock %}
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='select.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='table.css') }}">
+    <h1>{{ args.title }}</h1>
+    <div class="styled-select">
+        <form action="/degrees" method="get" data-ajax="false">
+            <select name="author1">
+                <option value="" class="label">Please select author:</option>
+                {% for author in args.author %}
+                    <option value="{{ author }}">{{ author }}</option>
+                {% endfor %}
+            </select>
+            <select name="author2">
+                <option value="" class="label">Please select author:</option>
+                {% for author in args.author %}
+                    <option value="{{ author }}">{{ author }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit" class="myButton">Search</button>
+        </form>
+    </div>
+
+    {#    retrieve data in form of table.#}
+    <div id="page-wrap">
+        <table id="table1">
+            <thead>
+            <tr>
+                {% for column in args.data[0] %}
+                    <th>{{ column }}</th>
+                {% endfor %}
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                {% for row in args.data[1] %}
+                    <td> {{ row }} </td>
+                {% endfor %}
+            </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

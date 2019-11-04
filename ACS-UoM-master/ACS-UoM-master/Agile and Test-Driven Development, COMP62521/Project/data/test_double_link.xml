@@ -1,0 +1,33 @@
+<dblp>
+<inproceedings>
+    <author>authora</author>
+    <author>authorb</author>
+    <author>authord</author>
+    <author>authorg</author>
+    <title>journal1</title>
+    <year>9999</year>
+</inproceedings>
+<inproceedings>
+    <author>authora</author>
+    <author>authore</author>
+    <title>journal2</title>
+    <year>9999</year>
+</inproceedings>
+<inproceedings>
+    <author>authorc</author>
+    <author>authorb</author>
+    <title>journal3</title>
+    <year>9999</year>
+</inproceedings>
+<inproceedings>
+    <author>authorc</author>
+    <author>authorg</author>
+    <title>journal4</title>
+    <year>9999</year>
+</inproceedings>
+<inproceedings>
+    <author>authorf</author>
+    <title>journal5</title>
+    <year>9999</year>
+</inproceedings>
+</dblp>

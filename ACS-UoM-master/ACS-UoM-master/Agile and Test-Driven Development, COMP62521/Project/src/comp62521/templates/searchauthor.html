@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}{{ args.title }}{% endblock %}
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='searchBox.css') }}">
+    <h1>{{ args.title }}</h1>
+    <div id="page-wrap">
+        <form class="form-wrapper cf" action="/searchauthor" method="get" data-ajax="false">
+            <input type="text" placeholder="Search Author..." name="author_name" value="{{ args.author_name }}"
+                   required>
+            <button class="btn" type="submit">Search</button>
+        </form>
+        {#    retrieve data in form of table.#}
+        <table id="table1">
+            <thead>
+            <tr>
+                <th>{{ args.data[0] }}</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {% for row in args.data[1] %}
+                <tr>
+                    <td><a href="/searchauthor?author_name={{ row }}&good=yes">Stats for {{ row }}</a></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

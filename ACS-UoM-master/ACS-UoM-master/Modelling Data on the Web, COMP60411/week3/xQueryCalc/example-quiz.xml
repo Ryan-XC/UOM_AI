@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz xmlns="http://www.cs.manchester.ac.uk/pgt/COMP60411/examples/quiz"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.cs.manchester.ac.uk/pgt/COMP60411/examples/quiz quiz.xsd">
+    <title>Foo</title>
+    <!-- This expression evaluates to 12345 -->
+    <expr>
+        <plus>
+            <number>246</number>
+            <minus>
+                <number>12</number>
+                <times>
+                    <number>4</number>
+                    <number>7</number>
+                </times>
+            </minus>
+            <times>
+                <number>513</number>
+                <plus>
+                    <number>-1</number>
+                    <number>2</number>
+                    <number>-3</number>
+                    <number>5</number>
+                    <times>
+                        <minus>
+                            <number>5</number>
+                            <number>2</number>
+                        </minus>
+                        <plus>
+                            <number>9</number>
+                            <number>1</number>
+                            <number>-3</number>
+                        </plus>
+                    </times>
+                </plus>
+                <times>
+                    <number>-1</number>
+                    <plus>
+                        <plus>
+                            <times>
+                                <number>2</number>
+                                <minus>
+                                    <number>-7</number>
+                                    <number>-10</number>
+                                </minus>
+                            </times>
+                            <times>
+                                <plus>
+                                    <number>2</number>
+                                    <number>-1</number>
+                                    <number>-1</number>
+                                </plus>
+                                <number>4</number>
+                            </times>
+                            <number>-1</number>
+                        </plus>
+                        <times>
+                            <number>-2</number>
+                            <number>3</number>
+                        </times>
+                    </plus>
+                </times>
+            </times>
+            <number>-197</number>
+        </plus>
+    </expr>
+
+    <!-- This expression evaluates to -133 -->
+    <expr>
+        <plus>
+            <times>
+                <number>7</number>
+                <minus>
+                    <number>4</number>
+                    <number>24</number>
+                </minus>
+            </times>
+            <number>7</number>
+        </plus>
+    </expr>
+
+    <!-- This expression evaluates to -2977 -->
+    <expr>
+        <plus>
+            <number>5</number>
+            <number>10</number>
+            <number>5</number>
+            <times>
+                <number>3</number>
+                <minus>
+                    <number>4</number>
+                    <plus>
+                        <number>1000</number>
+                        <number>3</number>
+                    </plus>
+                </minus>
+            </times>
+        </plus>
+    </expr>
+
+    <!-- This expression evaluates to 0 -->
+    <expr>
+        <plus>
+            <times>
+                <number>7</number>
+                <minus>
+                    <number>4</number>
+                    <number>24</number>
+                </minus>
+            </times>
+            <number>7</number>
+        <number>133</number> 
+        </plus>
+    </expr>
+
+</quiz>

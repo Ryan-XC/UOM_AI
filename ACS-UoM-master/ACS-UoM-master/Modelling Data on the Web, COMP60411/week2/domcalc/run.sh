@@ -1,0 +1,1 @@
+java -cp classes:lib/* uk.ac.manchester.cs.msc.ssd.domcalc.TestCalculator resource/calc1.rnc resource/mbelousov_test5_12345.xml

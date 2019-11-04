@@ -1,0 +1,20 @@
+week1 retrospective summary
+=====================
+
+Excellent points:
+1. clearly understand the requirement. Good communications between PO and client. (Martin purpose)
+2. environment installed successfully among the group. (Ghada's purpose)
+3. experienced team members with abundant knowledge of python. (Heng's purpose)
+4. good organization and team communication. (Jingjing's purpose)
+5. Good output.
+
+Need to improve:
+1. more collaborations among team members. (Martin purpose)
+2. team members should engage more with the group. (Ghada's purpose)
+3. members should learn from experienced ones. (Heng's purpose) 
+4. need to improve our personal skills. (Jingjing's purpose)
+5. Physically pair programming.
+
+requirement issue
+=====================
+1. upper case, lower case issue in sorting?

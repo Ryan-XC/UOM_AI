@@ -1,0 +1,174 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "person"
+  ],
+  "properties": {
+    "person": {
+      "$id": "#/properties/person",
+      "type": "array",
+      "title": "The Person Schema",
+      "items": {
+        "$id": "#/properties/person/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "ID",
+          "name",
+          "address",
+          "city",
+          "county",
+          "postal",
+          "phone",
+          "email"
+        ],
+        "properties": {
+          "ID": {
+            "$id": "#/properties/person/items/properties/ID",
+            "type": "integer",
+            "title": "The Id Schema",
+            "default": 0,
+            "examples": [
+              1
+            ],
+            "minimum": 0.0
+          },
+          "name": {
+            "$id": "#/properties/person/items/properties/name",
+            "type": "object",
+            "title": "The Name Schema",
+            "properties": {
+              "first": {
+                "$id": "#/properties/person/items/properties/name/properties/first",
+                "type": "string",
+                "title": "The First Schema",
+                "default": "",
+                "examples": [
+                  "Aleshia"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "last": {
+                "$id": "#/properties/person/items/properties/name/properties/last",
+                "type": "string",
+                "title": "The Last Schema",
+                "default": "",
+                "examples": [
+                  "Tomkiewicz"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "others": {
+                "$id": "#/properties/person/items/properties/name/properties/others",
+                "type": "string",
+                "title": "The Others Schema",
+                "default": "",
+                "examples": [
+                  ""
+                ],
+                "pattern": "^(.*)$"
+              }
+            },
+            "required": [
+              "last"
+            ]
+          },
+          "address": {
+            "$id": "#/properties/person/items/properties/address",
+            "type": "string",
+            "title": "The Address Schema",
+            "default": "",
+            "examples": [
+              "14 Taylor St"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "city": {
+            "$id": "#/properties/person/items/properties/city",
+            "type": "string",
+            "title": "The City Schema",
+            "default": "",
+            "examples": [
+              "St. Stephens Ward"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "county": {
+            "$id": "#/properties/person/items/properties/county",
+            "type": "string",
+            "title": "The County Schema",
+            "default": "",
+            "examples": [
+              "Kent"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "postal": {
+            "$id": "#/properties/person/items/properties/postal",
+            "type": "string",
+            "title": "The Postal Schema",
+            "default": "",
+            "examples": [
+              "CT2 7PP"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "phone": {
+            "$id": "#/properties/person/items/properties/phone",
+            "type": "object",
+            "title": "The Phone Schema",
+            "required": [
+              "phone1"
+            ],
+            "properties": {
+              "phone1": {
+                "$id": "#/properties/person/items/properties/phone/properties/phone1",
+                "type": "string",
+                "title": "The Phone1 Schema",
+                "default": "",
+                "examples": [
+                  "01835-703597"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "phone2": {
+                "$id": "#/properties/person/items/properties/phone/properties/phone2",
+                "type": "string",
+                "title": "The Phone2 Schema",
+                "default": "",
+                "examples": [
+                  "01944-369967"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "phone3": {
+                "$id": "#/properties/person/items/properties/phone/properties/phone3",
+                "type": "string",
+                "title": "The Phone3 Schema",
+                "default": "",
+                "examples": [
+                  ""
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          },
+          "email": {
+            "$id": "#/properties/person/items/properties/email",
+            "type": "string",
+            "title": "The Email Schema",
+            "default": "",
+            "examples": [
+              "atomkiewicz@hotmail.com"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+load-list
+{
+    variables:
+        "BB" = "C:/Users/Simone/Desktop/Lab3/backbone";
+    directories:
+        "base" = "$BB/atms/base",
+        "backbone" = "C:/Users/Simone/Desktop/Lab3/backbone/backbone",
+        "backbone :: implementation" = "C:/Users/Simone/Desktop/Lab3/backbone/backbone/implementation",
+        "backbone :: documentation profile" = "C:/Users/Simone/Desktop/Lab3/backbone/backbone/documentation profile",
+        "backbone :: standard profile" = "C:/Users/Simone/Desktop/Lab3/backbone/backbone/standard profile",
+        "backbone :: api" = "C:/Users/Simone/Desktop/Lab3/backbone/backbone/api",
+        "backbone :: backbone profile" = "C:/Users/Simone/Desktop/Lab3/backbone/backbone/backbone profile";
+}

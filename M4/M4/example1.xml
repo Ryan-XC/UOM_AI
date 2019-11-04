@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents>
+    <incident Id="345">
+        <event_detail Kind="accident" Date_of_event="Monday,October 22,2019" Time="15:30" Building_location="kilburn" Room_No="2.19" School_admin_department="Computer Science">
+            A person tripped and fell
+        </event_detail>
+        <injured_person Status="student" Name="Mary" Staff_student_ID_No="10456679" Job_Title="student" Supervisor_manager="Ray" Tel_No="07827223445" Email="Mary@outlook.com" School_Administrative_unit="Computer Science" Treatment="Treated by first-aider" Absence_from_work="Absent,but returned within 3 days">
+            <description_of_event>
+                Mary tripped and fell and broke her arm.
+            </description_of_event>
+            <nature_extent_of_any_injury_damage>
+                A broken laptop.
+            </nature_extent_of_any_injury_damage>
+            <nature_of_treatmen_given_and_by_whom>
+                Doctor Jhon did the first aid.
+            </nature_of_treatmen_given_and_by_whom>
+        </injured_person>
+        <report_person Name="Lily" Job_title="student" Email="Lily@outlook.com" Tel_No="07826776118" School_Administrative_unit="Computer Science">
+            Mary's friend Lily witnessed the accident.
+        </report_person>
+    </incident>
+</incidents>

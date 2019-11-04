@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="backbone">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../evolve-1.0.2/common/backbone.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

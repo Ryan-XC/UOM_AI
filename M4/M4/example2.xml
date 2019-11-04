@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents>
+    <incident Id="567">
+        <event_detail Kind="Ill health" Date_of_event="Tuesday,May 12,2019" Time="11:30" Building_location="kilburn" Room_No="2.25" School_admin_department="Computer Science">
+            A person tripped and fell
+        </event_detail>
+        <injured_person Status="student" Name="Nancy" Staff_student_ID_No="10451249" Job_Title="student" Supervisor_manager="Anna" Tel_No="07822328769" Email="Nancy@outlook.com" School_Administrative_unit="Computer Science" Treatment="self-treatment" Absence_from_work="No Absent">
+            <description_of_event>
+                Nancy had a fever.
+            </description_of_event>
+            <nature_extent_of_any_injury_damage>
+                None.
+            </nature_extent_of_any_injury_damage>
+            <nature_of_treatmen_given_and_by_whom>
+                Nancy take a pill.
+            </nature_of_treatmen_given_and_by_whom>
+        </injured_person>
+        <report_person Name="Tyisha" Job_title="staff" Email="Tyisha@outlook.com" Tel_No="07126335618" School_Administrative_unit="Computer Science">
+            Nancy's teacher Tyisha noticed that.
+        </report_person>
+    </incident>
+</incidents>

@@ -1,0 +1,23 @@
+//Q1
+SELECT distinct count(?friend)
+WHERE{
+	?person foaf:name "Sandro Hawke";
+	 		foaf:knows ?friend
+}
+
+//Q2
+SELECT ?name
+WHERE{
+	?person foaf:name "Sandro Hawke";
+		 	foaf:knows ?friend.
+	?friend foaf:name ?name.
+}
+
+
+//Q3
+SELECT ?name
+WHERE{
+	?person foaf:name "Sandro Hawke";
+			foaf:knows+ ?friend.
+	?friend foaf:name ?name.
+}

@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri Oct 09 15:26:41 BST 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.2 - (1495037): instance a816c00e-0150-4cff-25eb-0000080ef468 
+on database directory /Users/Martin/Desktop/Resource/The University of Manchester/COMP60411(Modelling Data on the Web)/week1/db-process/DATABASE with class loader sun.misc.Launcher$AppClassLoader@2a139a55 
+Loaded from file:/Users/Martin/Desktop/Resource/The%20University%20of%20Manchester/COMP60411(Modelling%20Data%20on%20the%20Web)/week1/db-process/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0-b132
+user.dir=/Users/Martin/Desktop/Resource/The University of Manchester/COMP60411(Modelling Data on the Web)/week1/db-process
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.11
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
